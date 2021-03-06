@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>ConsoleHelpers</RootNamespace>
+	  <TargetFramework>net5.0</TargetFramework>
+	  <OptionExplicit>On</OptionExplicit>
+	  <OptionCompare>Binary</OptionCompare>
+	  <OptionStrict>Off</OptionStrict>
+	  <OptionInfer>On</OptionInfer>
+
+  </PropertyGroup>
+
+
+</Project>

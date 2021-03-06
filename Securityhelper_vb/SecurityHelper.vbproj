@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!--<LangVersion>9.0</LangVersion>-->
+		<TargetFramework>net5.0</TargetFramework>
+		<!--<ApplicationManifest>app.manifest</ApplicationManifest>-->
+		<OptionExplicit>On</OptionExplicit>
+		<OptionCompare>Binary</OptionCompare>
+		<OptionStrict>Off</OptionStrict>
+		<OptionInfer>On</OptionInfer>
+		<RootNamespace />
+	</PropertyGroup>
+
+</Project>
