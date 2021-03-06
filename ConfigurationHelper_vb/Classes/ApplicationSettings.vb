@@ -1,6 +1,10 @@
 ﻿Namespace Classes
 	''' <summary>
-	''' Singleton entry point
+	''' Singleton entry point to access information from appsettings.json
+	'''
+	''' For each property to be exposed which have not been, setup a private
+	''' variable, set it's value in the new constructor followed creating a read-only
+	''' property for accessing the value.
 	''' </summary>
 	Public NotInheritable Class ApplicationSettings
 		Private Shared ReadOnly Lazy As New Lazy(Of ApplicationSettings)(Function() New ApplicationSettings())
@@ -36,12 +40,19 @@
 				Return _dsn
 			End Get
 		End Property
-
+		''' <summary>
+		''' Indicates to use dev, test or prod environment
+		''' </summary>
+		''' <returns></returns>
 		Public ReadOnly Property Environment() As String
 			Get
 				Return _environment
 			End Get
 		End Property
+		''' <summary>
+		''' For database connection string
+		''' </summary>
+		''' <returns></returns>
 		Public ReadOnly Property ConnectionString() As String
 			Get
 				Return _connectionString

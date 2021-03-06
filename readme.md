@@ -7,7 +7,18 @@ plus some functionality is missing like smtp sections. Moving to .NET Core, the 
 a Json file generally named appsettings.json. The intent here is to layout how to use appsettings.json 
 for desktop applications.
 
+# Requires
 
+![screen](ConfigurationHelper_vb/assets/Versions.png)
+
+:heavy_check_mark: Visual Studio 2019 or higher
+
+### NuGet packages
+
+:heavy_check_mark: [microsoft.extensions.configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration/) <br/>
+:heavy_check_mark: [microsoft.extensions.configuration.binder](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Binder/)<br/>
+:heavy_check_mark: [microsoft.extensions.configuration.FileExensions](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.FileExtensions/)<br/>
+:heavy_check_mark: [microsoft.extensions.configuration.Json](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json/)
 
 # GitHub repository
 

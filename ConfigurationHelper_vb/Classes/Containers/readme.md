@@ -1,0 +1,1 @@
+﻿Classes in this folder are for storing information read from appsettings.json

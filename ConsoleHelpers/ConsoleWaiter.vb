@@ -21,6 +21,11 @@ Public Module ConsoleWaiter
         Dim time = TimeSpan.FromSeconds(5)
         Return ReadLineWithTimeout(time)
     End Function
+    ''' <summary>
+    ''' Wait for response, time out in five seconds. Not
+    ''' meant for collecting user input but could.
+    ''' </summary>
+    ''' <returns>User input</returns>
     Public Function ReadLineWithTimeoutAndMessage() As String
         EmptyLine()
         PressAnyKey()

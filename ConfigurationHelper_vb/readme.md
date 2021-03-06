@@ -24,8 +24,7 @@ Although C# 9 is used (configured in each project file) the majority of code wil
 
 # Requires
 - Microsoft Visual Studio 2019
-- Microsoft SQL-Server (minimum Express edition)
-- Microsoft SSMS (SQL-Server Management Studio) which is optional for creating the database which can be done in Visual Studio also.
+
 
 
 ![requires](assets/Versions.png)
