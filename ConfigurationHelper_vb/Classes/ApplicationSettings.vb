@@ -1,6 +1,7 @@
-﻿
-
-Namespace Classes
+﻿Namespace Classes
+	''' <summary>
+	''' Singleton entry point
+	''' </summary>
 	Public NotInheritable Class ApplicationSettings
 		Private Shared ReadOnly Lazy As New Lazy(Of ApplicationSettings)(Function() New ApplicationSettings())
 
