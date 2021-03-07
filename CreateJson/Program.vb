@@ -7,10 +7,6 @@ Module Program
         ProtoTypeConfiguration.CreateJson()
 
     End Sub
-    Sub Test()
 
-
-
-    End Sub
 End Module
 
