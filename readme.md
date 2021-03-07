@@ -144,8 +144,11 @@ This one may not have the best names for properties although that is not really 
 }
 ```
 
+![screen](Basic1/assets/basic1.png)
 
 # C# version
+
+These code samples were the base for this repository and do different examples.
 
 :heavy_check_mark: [Article](https://social.technet.microsoft.com/wiki/contents/articles/54173.net-core-desktop-application-configurations-c.aspx)
 
