@@ -42,7 +42,6 @@ Public Class Helper
         Get
             Dim config = InitMainConfiguration()
             Return config.GetSection("Environment").Get(Of Environment)().Name
-
         End Get
     End Property
 
@@ -85,6 +84,20 @@ Public Class Helper
 
         Return builder.Build()
 
+    End Function
+    ''' <summary>
+    ''' Generic method to read a section from the json configuration file.
+    ''' </summary>
+    ''' <typeparam name="T">Class type</typeparam>
+    ''' <param name="section">Section to read</param>
+    ''' <returns>Instance of T</returns>
+    ''' <remarks>
+    '''     InitMainConfiguration()
+    '''     Dim applicationSettings = InitOptions(Of DatabaseSettings)("database")
+    ''' </remarks>
+    Public Shared Function InitOptions(Of T As New)(section As String) As T
+        Dim config = InitMainConfiguration()
+        Return config.GetSection(section).Get(Of T)()
     End Function
 
 End Class
