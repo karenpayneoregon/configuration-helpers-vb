@@ -7,11 +7,27 @@ plus some functionality is missing like smtp sections. Moving to .NET Core, the 
 a Json file generally named appsettings.json. The intent here is to layout how to use appsettings.json 
 for desktop applications.
 
+### Make sure
+
+To read the `readme.md` files in the root of each project along with several have sub `readme.md` files in folders in some of the projects.
+
+### Note 1
+
+There are a mixture of the following projects
+
+- .NET Framework
+- .NET Framework Core
+
+### Note 2
+
+- There are examples for both `app.config` and 'appsettings.json' along with conventional `My.Settings` as some developers have a perference while others are open to alternative ways to store information.
+
 # Requires
 
 ![screen](ConfigurationHelper_vb/assets/Versions.png)
 
 :heavy_check_mark: Visual Studio 2019 or higher
+:heavy_check_mark: Create and populate the following database using [this script](https://gist.github.com/karenpayneoregon/9bdf1a7d5310ac1d562b2326d79d6038).
 
 ### NuGet packages
 
