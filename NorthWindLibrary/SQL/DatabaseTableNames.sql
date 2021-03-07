@@ -1,0 +1,7 @@
+﻿/*
+    Get table names
+*/
+
+USE NorthWind2020
+
+SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME <> 'sysdiagrams' ORDER BY TABLE_NAME

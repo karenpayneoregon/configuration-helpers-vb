@@ -23,6 +23,7 @@ Public Module ConsoleColors
         Console.Write(value)
 
     End Sub
+
     Public Sub WriteWhite(message As String, Optional line As Boolean = True)
 
         Console.ForegroundColor = ConsoleColor.White
