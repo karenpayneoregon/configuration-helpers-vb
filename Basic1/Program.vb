@@ -19,10 +19,11 @@ Module Program
 
         Console.WriteLine("Mail addresses")
         For Each address In mailAddress
-            Console.WriteLine(vbTab & $"{address}")
+            Console.WriteLine($"{vbTab}{address}")
         Next
 
         EmptyLine()
+
         Console.WriteLine($"QryCacheShort: {ApplicationSettings.Instance.QryCacheShort}")
 
         ReadLineWithTimeoutAndMessage()

@@ -16,7 +16,13 @@
 		Private Shared _qryCacheShort As TimeSpan
 
 		Private Sub New()
-
+			LoadSettings()
+		End Sub
+		''' <summary>
+		''' Load settings, in this case only several settings
+		''' are exposed.
+		''' </summary>
+		Private Sub LoadSettings()
 			Dim settings = Helper.GetApplicationSettings()
 
 			_dsn = settings?.DiConfiguration.Dsn
@@ -24,7 +30,6 @@
 			_mailAddress = settings.MailAddressesList
 			_qryCacheShort = settings.DiConfiguration.QryCacheShort
 			_connectionString = settings.ConnectionString
-
 		End Sub
 
 		''' <summary>
@@ -35,6 +40,12 @@
 				Return Lazy.Value
 			End Get
 		End Property
+		''' <summary>
+		''' Reload settings from appsettings.json
+		''' </summary>
+		Public Sub Reload()
+			LoadSettings()
+		End Sub
 		Public ReadOnly Property Dsn() As String
 			Get
 				Return _dsn
