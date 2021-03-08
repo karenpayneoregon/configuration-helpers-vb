@@ -170,4 +170,8 @@ These code samples were the base for this repository and do different examples.
 
 :heavy_check_mark: [repostory](https://github.com/karenpayneoregon/configuration-helpers)
 
+# Entity Framework connection at runtime
+
+This [repository](https://github.com/karenpayneoregon/EntityFramework-environment-connections) shows how to setup connection strings for different environments e.g. development, staging and production. This isolates operations so a developer can develop, testers can test without disturbing the production environment.
+
 
