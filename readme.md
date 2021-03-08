@@ -42,7 +42,7 @@ https://github.com/karenpayneoregon/configuration-helpers-vb
 
 # Microsoft TechNet Article
 
-TODO
+https://social.technet.microsoft.com/wiki/contents/articles/54273.configuration-files-for-windows-forms-vb-net.aspx
 
 # Sample configurations
 
