@@ -1,7 +1,9 @@
 ﻿Module Module1
 
     Sub Main()
+
         WriteHeader("Standard app.setting code sample")
+
         WriteYellow($"Connection string")
         Console.WriteLine(My.Settings.ConnectionString)
 

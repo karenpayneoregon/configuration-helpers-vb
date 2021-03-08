@@ -17,6 +17,7 @@ Module Program
         EmptyLine()
 
         WriteWhite("UseGeoLocation")
+
         Console.WriteLine(ApplicationConfiguration.Instance.UseGeoLocation)
         EmptyLine()
 
