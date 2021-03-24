@@ -1,9 +1,13 @@
-﻿Imports System.Collections.Generic
-Imports System.Threading.Tasks
-Imports Contexts
-Imports Microsoft.EntityFrameworkCore
-Imports Models
+﻿# About
 
+This project shows how when a coder does not understand asynchronous operations in regards to keeping a front-end responsive while reading data using Entity Framework can keep the front-end responsive.
+
+**GetContactsAsync** wraps the read operation in a ```task``` while **GetContactsAsync** does not and by not means the front-end will not keep things responsive.
+
+
+![screen](assets/compare.png)
+
+```csharp
 Public Class ContactOperations
     Public Shared Async Function GetContactsAsync() As Task(Of List(Of Contacts))
         Return Await Task.Run(Async Function()
@@ -17,9 +21,5 @@ Public Class ContactOperations
             Return Await context.Contacts.Include(Function(contact) contact.ContactTypeIdentifierNavigation).ToListAsync()
         End Using
     End Function
-    Public Shared Function GetContacts() As List(Of Contacts)
-        Using context = New NorthWindContext()
-            Return context.Contacts.Include(Function(contact) contact.ContactTypeIdentifierNavigation).ToList()
-        End Using
-    End Function
 End Class
+```
